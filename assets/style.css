@@ -6,8 +6,8 @@
 
 header {
     position: absolute;
-  z-index: 1;
-  width: 100%;
+    z-index: 1;
+    width: 100%;
 }
 
 header .header-top {
@@ -96,27 +96,111 @@ header .header-top .header-top-control .header-top-right .become-local-guide:hov
     background-color: #dd7364;
 }
 
+header .header-menu {
+    align-content: center;
+    height: 100px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+header .header-menu .header-menu-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 270px;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    background-color: #313041;
+}
+
+header .header-menu .header-menu-control .header-menu-left {
+    display: flex;
+    list-style-type: none;
+    color: white;
+    gap: 30px;
+    align-items: center;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-logo img {
+    width: 150px;
+    vertical-align: middle;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-list {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-list .menu-name {
+    height: 101px;
+    align-content: center;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-list .home {
+    display: none;
+    height: 3px;
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-list:hover .home {
+    display: block;
+    margin-top: -3px;
+}
+
+
+header .header-menu .header-menu-control .header-menu-left .menu-list i {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+header .header-menu .header-menu-control .header-menu-right {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    gap: 20px;
+}
+
+header .header-menu .header-menu-control .header-menu-right li i {
+    padding: 10px;
+    background-color: #0000006b;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 .animat-background {
     overflow: hidden;
-  height: 850px;
+    height: 850px;
 }
 
 .animat-background iframe {
-    width: 100%;
+    width: 125%;
     height: 1078px;
-    min-height: 100vh;
     position: relative;
-    transform: translate(0%, -10%);
+    transform: translate(-50%, -50%);
     z-index: -1;
+    top: 50%;
+    left: 50%;
 }
 
 .animat-background img {
-    width: 100%;
+    width: 125%;
     height: 1078px;
-    min-height: 100vh;
     position: relative;
-    transform: translate(0%, -10%);
+    transform: translate(-50%, -50%);
     z-index: -1;
+    top: 50%;
+    left: 50%;
 }
 
 

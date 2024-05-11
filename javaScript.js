@@ -12,3 +12,14 @@ function showImage() {
 
 // Show video after 10 seconds
 setTimeout(showVideo, 5000);
+
+
+// ------------sroll then navbar fixed------------
+window.addEventListener('scroll', function() {
+    var headerMenu = document.getElementById('headerMenu');
+    if (window.scrollY > 0) {
+        headerMenu.classList.add('navbar-fixed');
+    } else {
+        headerMenu.classList.remove('navbar-fixed');
+    }
+});
