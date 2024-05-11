@@ -15,7 +15,7 @@ setTimeout(showVideo, 5000);
 
 
 // ------------sroll then navbar fixed------------
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var headerMenu = document.getElementById('headerMenu');
     if (window.scrollY > 0) {
         headerMenu.classList.add('navbar-fixed');

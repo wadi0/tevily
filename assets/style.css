@@ -101,6 +101,8 @@ header .header-menu {
     height: 100px;
     width: 100%;
     transition: 0.3s;
+    border-bottom: 1px solid lightgray;
+
 }
 
 header .header-menu .header-menu-control {
@@ -108,7 +110,6 @@ header .header-menu .header-menu-control {
     justify-content: center;
     align-items: center;
     gap: 270px;
-    border-bottom: 1px solid lightgray;
 }
 
 .navbar-fixed {
@@ -123,6 +124,7 @@ header .header-menu .header-menu-control .header-menu-left {
     color: white;
     gap: 30px;
     align-items: center;
+    margin: 0;
 }
 
 header .header-menu .header-menu-control .header-menu-left .menu-logo img {
@@ -140,22 +142,46 @@ header .header-menu .header-menu-control .header-menu-left .menu-list {
 }
 
 header .header-menu .header-menu-control .header-menu-left .menu-list .menu-name {
-    height: 101px;
+    /*height: 101px;*/
     align-content: center;
 }
 
-header .header-menu .header-menu-control .header-menu-left .menu-list .home {
+header .header-menu .header-menu-control .header-menu-left .menu-list .menu-name span {
+    position: relative;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-list .menu-name .home-list {
     display: none;
+    position: absolute;
+    margin-top: 35px;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-list .menu-name:hover .home-list {
+    display: block;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-list .menu-name .home-list ul {
+    list-style-type: none;
+    background: white;
+    color: grey;
+    padding: 25px 30px;
+    width: 250px;
+    border-radius: 5px;
+
+
+}
+
+.header-menu-control .header-menu-left .menu-list .menu-name .home-list .bottom-line {
+    border-bottom: 1px solid lightgray;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-list .home-active-line {
+    display: block;
     height: 3px;
     background-color: orangered;
     border-radius: 5px;
+    width: 60px;
 }
-
-header .header-menu .header-menu-control .header-menu-left .menu-list:hover .home {
-    display: block;
-    margin-top: -3px;
-}
-
 
 header .header-menu .header-menu-control .header-menu-left .menu-list i {
     font-size: 12px;
