@@ -13,6 +13,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.cdnfonts.com/css/reey" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 </head>
@@ -173,68 +178,152 @@
                 <p class="title-tagline">Checkout Beautiful Places Arround the World.</p>
             </div>
             <div class="search-form">
-                <div class="location-box">
-                    <div class="location-destination-box">
-                        <i class="fa-solid fa-location-dot box-icon"></i>
-                        <div class="location-destination">
-                            <div class="location">
-                                <p class="m-0">location</p>
-                                <i class="fa-solid fa-angle-down"></i>
+                <div class="search-form-background">
+                    <div class="location-box">
+                        <div class="location-destination-box">
+                            <i class="fa-solid fa-location-dot box-icon"></i>
+                            <div class="location-destination">
+                                <div class="location">
+                                    <p class="m-0">location</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <span class="destination">Destination</span>
                             </div>
-                            <span class="destination">Destination</span>
                         </div>
                     </div>
-                </div>
-                <div class="location-box">
-                    <div class="location-destination-box">
-                        <i class="fa-solid fa-square-person-confined box-icon"></i>
-                        <div class="location-destination">
+                    <div class="location-box destination-box">
+                        <div class="location-destination-box">
+                            <i class="fa-solid fa-square-person-confined box-icon"></i>
+                            <div class="location-destination">
                             <span class="location">
                                 <p class="m-0">Type</p>
                                 <i class="fa-solid fa-angle-down"></i>
                             </span>
-                            <span class="destination">Activity</span>
+                                <span class="destination">Activity</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="location-box">
-                    <div class="location-destination-box">
-                        <i class="fa-regular fa-clock box-icon"></i>
-                        <div class="location-destination">
+                    <div class="location-box date-box">
+                        <div class="location-destination-box">
+                            <i class="fa-regular fa-clock box-icon"></i>
+                            <div class="location-destination">
                             <span class="location">
                                 <p class="m-0">Date From</p>
                             </span>
-                            <span class="destination">Date From</span>
+                                <span class="destination">Date From</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="location-box">
-                    <div class="location-destination-box">
-                        <i class="fa-solid fa-users box-icon"></i>
-                        <div class="location-destination">
+                    <div class="location-box guests-box">
+                        <div class="location-destination-box">
+                            <i class="fa-solid fa-users box-icon"></i>
+                            <div class="location-destination">
                             <span class="location">
                                 <p class="m-0">Guests</p>
                             </span>
-                            <span class="destination">0</span>
+                                <span class="destination">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-box filter-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"/>
+                        </svg>
+
+                    </div>
+                    <div class="location-box search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
+                    </div>
+                </div>
+            </div>
+            <div class="browse-type-arrow">
+                <img src="https://gaviaspreview.com/wp/tevily/wp-content/themes/tevily/assets/images/line-arrow.png"
+                     alt="arrow-icon"/>
+                <span>Or browse the selected type </span>
+            </div>
+        </div>
+        <div class="tevily-event">
+            <div class="swiper swiper-event">
+                <div class="swiper-wrapper swiper-wrapper-event">
+                    <div class="swiper-slide">
+                        <div class="tevily-event-card">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span>Wildlife 0</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tevily-event-card">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span>Wildlife 1</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tevily-event-card">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span>Wildlife 2</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tevily-event-card">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span>Wildlife 3</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tevily-event-card">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span>Wildlife 4</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tevily-event-card">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <span>Wildlife 5</span>
                         </div>
                     </div>
                 </div>
-                <div class="location-box filter-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                         stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"/>
-                    </svg>
+                <!--                <div class="swiper-button-prev"></div>-->
+                <div class="swiper-button-prev swiper-button-prev-event ">
+                    <i class="fa-solid fa-angle-left custom-icon-prev"></i>
+                </div>
+                <div class="swiper-button-next swiper-button-next-event">
+                    <i class="fa-solid fa-angle-right custom-icon-prev"></i>
+                </div>
 
-                </div>
-                <div class="location-box search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
-                </div>
             </div>
         </div>
+        <div class="trevily-trip-plan">
+            <div class="trip-plan">
+                <p class="sub-title-trip">why choose us?</p>
+                <h3 class="title-trip">Plan Your Trip with Trevily</h3>
+                <p class="trip-desc">There are many variations of passages of available but the majority have suffered
+                    alteration in some
+                    form, by injected hum randomised words which don't look even slightly.</p>
+                <div class="plan-checkbox mb-3"><i class="fa-solid fa-circle-check me-2"></i> Invest in your simply
+                    neighborhood
+                </div>
+                <div class="plan-checkbox mb-3"><i class="fa-solid fa-circle-check me-2"></i> Support people in free
+                    text extreme need
+                </div>
+                <div class="plan-checkbox mb-3"><i class="fa-solid fa-circle-check me-2"></i> Largest global industrial
+                    business community
+                </div>
+                <button class="booking-btn">book with us now</button>
+            </div>
+            <div class="plan-pic">
+                <img src="https://gaviaspreview.com/wp/tevily/wp-content/uploads/2021/10/image-12.jpg"
+                     alt="trevel-img"/>
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+            </div>
+        </div>
+
     </div>
 </div>
 
 <script src="javaScript.js"></script>
+
 </body>
 </html>

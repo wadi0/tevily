@@ -106,6 +106,7 @@ header .header-menu {
     width: 100%;
     transition: 0.3s;
     border-bottom: 1px solid lightgray;
+    /*background-color: white;*/
 
 }
 
@@ -354,11 +355,13 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     height: 850px;
     background-color: #0000008a;
     align-content: center;
+    overflow: hidden;
 }
 
 .animat-background-data .sub-title-tagline {
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 70px;
 }
 
 .animat-background-data .sub-title {
@@ -380,21 +383,27 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     font-size: 20px;
 }
 
-.animat-background-data .search-form {
+.animat-background-data .search-form-background {
+    display: flex;
+    justify-content: center;
     background-color: white;
-    border-radius: 5px;
     width: fit-content;
     margin: 0 auto;
-    display: flex;
+    border-radius: 5px;
+    /*background-color: white;*/
+    /*border-radius: 5px;*/
+    /*width: fit-content;*/
+    /*margin: 0 auto;*/
+    /*display: flex;*/
     margin-top: 35px;
 }
 
 .animat-background-data .search-form .location-box {
     height: 80px;
-    width: 200px;
+    width: 250px;
     align-content: center;
-      border-right: 1px solid lightgray;
-      padding: 0 15px;
+    border-right: 1px solid lightgray;
+    padding: 0 15px;
 }
 
 .animat-background-data .search-form .location-box .location-destination-box {
@@ -405,8 +414,8 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 }
 
 .location-destination-box .box-icon {
-    font-size: 35px;
-  color: #E8604C;
+    font-size: 30px;
+    color: #E8604C;
 }
 
 .location-destination-box .location-destination {
@@ -421,10 +430,10 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     align-items: center;
 }
 
-.location-destination .location  p {
+.location-destination .location p {
     text-transform: capitalize;
-  color: gray;
-  font-size: 15px;
+    color: gray;
+    font-size: 14px;
 }
 
 .location-destination .location i {
@@ -434,7 +443,19 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .location-destination .destination {
     font-size: 15px;
-  font-weight: 500;
+    font-weight: 500;
+}
+
+.search-form .destination-box {
+    width: 220px !important;
+}
+
+.search-form .date-box {
+    width: 200px !important;
+}
+
+.search-form .guests-box {
+    width: 180px !important;
 }
 
 .search-form .filter-box {
@@ -442,24 +463,241 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 }
 
 .search-form .filter-box svg {
-    width: 50px;
+    width: 40px;
     color: #E8604C;
 }
 
 .search-form .search-btn {
+    width: 180px !important;
     background-color: #E8604C;
-  border-right: none !important;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+    border-right: none !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.search-form .search-btn:hover {
+    background-color: #dd7364;
+}
+
+.animat-background-data .browse-type-arrow {
+
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 550px;
+}
+
+.animat-background-data .browse-type-arrow img {
+    position: relative;
+}
+
+.animat-background-data .browse-type-arrow span {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.tevily-event {
+  /*  width: 100%;*/
+  /*position: absolute;*/
+  /*top: 88%;*/
+  /*z-index: 1;*/
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+
+.tevily-event .tevily-event-card {
+    background-color: white;
+  border: 1px solid whitesmoke;
+  height: 220px;
+  width: 200px;
+  align-content: center;
+  padding: 0 50px;
+  border-radius: 5px;
+    display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-    font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 4px;
+  gap: 15px;
+    cursor: pointer;
+}
+
+.tevily-event .tevily-event-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tevily-event .tevily-event-card i {
+    background-color: #9da89d47;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: gray;
+}
+
+.tevily-event .tevily-event-card i:hover {
+    background-color: #E8604C;
+    color: white;
+}
+
+.tevily-event .tevily-event-card span {
+    font-weight: 600;
+  font-size: 18px;
+}
+
+
+.swiper-event {
+  width: 1150px;
+  height: 260px;
+}
+
+.swiper-wrapper-event {
+    margin-left: 15px;
+}
+
+.swiper-button-prev-event {
+    background-color: white;
+  border-radius: 50%;
+  padding: 25px;
+  color: black !important;
+    left: 0 !important;
+    display: none !important;
+}
+
+.swiper-button-next-event {
+    background-color: white ;
+  border-radius: 50%;
+  padding: 25px;
+  color: black !important;
+    right: 2px !important;
+    display: none !important;
+}
+
+.swiper-event:hover .swiper-button-next-event, .swiper-event:hover .swiper-button-prev-event {
+    display: flex !important;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.swiper-button-prev-event::after, .swiper-button-next-event::after {
+    content: none !important;
+}
+
+.trevily-trip-plan {
+    display: flex;
+  margin: 100px auto;
+  justify-content: center;
+  overflow: hidden;
+    gap: 70px;
+}
+
+.trevily-trip-plan .trip-plan {
+    width: 600px;
+}
+
+.trevily-trip-plan .sub-title-trip {
+    font-size: 20px;
+  font-family: 'Reey', sans-serif;
+  color: #E8604C;
+    text-transform: capitalize;
+}
+
+.trevily-trip-plan .title-trip {
+    font-size: 50px;
+  font-weight: 600;
+}
+
+.trevily-trip-plan .trip-desc {
+    color: gray;
+  font-weight: 300;
+      margin: 30px 0;
+}
+
+.trevily-trip-plan .plan-checkbox {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.trevily-trip-plan .plan-checkbox i {
+    color: #E8604C;
+}
+
+.trevily-trip-plan .booking-btn {
+    border: none;
+    background-color: #E8604C;
+  height: 55px;
   color: white;
+  padding: 0 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.trevily-trip-plan .booking-btn:hover {
+    background-color: grey;
+}
+
+.trevily-trip-plan .plan-pic {
+    border-radius: 50%;
+  vertical-align: middle;
+    width: 520px;
+}
+
+.trevily-trip-plan .plan-pic img {
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.trevily-trip-plan .plan-pic .shape-1 {
+    width: 100px;
+  height: 100px;
+  background-color: #faf5ee;
+  border-radius: 50%;
+    position: absolute;
+  animation: moveRight 5s infinite alternate;
+    /*top: 215%;*/
+    margin-top: -30rem;
+}
+
+@keyframes moveRight {
+  0% {
+    left: 52%;
+  }
+  100% {
+    left: 54%; /* Adjust this value to control how far the element moves */
+  }
+}
+
+.trevily-trip-plan .plan-pic .shape-2 {
+    width: 150px;
+  height: 150px;
+  background-color: #E8604C;
+  border-radius: 50%;
+    position: absolute;
+  animation: moveLeft 5s infinite alternate;
+    /*top: 215%;*/
+    margin-top: -7rem;
+    z-index: -1;
+}
+
+@keyframes moveLeft {
+  0% {
+    left: 70%;
+  }
+  100% {
+    left: 72%; /* Adjust this value to control how far the element moves */
+  }
 }
 
 /*-----------------------------------------------------------------*/
@@ -487,10 +725,6 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
     header .header-top .header-top-control .header-top-right .become-local-guide {
         display: none;
-    }
-
-    header .header-menu {
-        background-color: white;
     }
 
     header .header-menu .header-menu-control {
