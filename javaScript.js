@@ -78,7 +78,7 @@ window.addEventListener('scroll', function () {
 // });
 
 
-const swiper = new Swiper('.swiper', {
+const swiperEvent = new Swiper('.swiper-event', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -93,6 +93,36 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+const swiperFeature = new Swiper('.swiper-feature', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  //     autoplay: {
+  //   delay: 5000, // milliseconds
+  //   disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+  // },
+
+    slidesPerView: 4,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+      clickable: true,
   },
 
   // Navigation arrows
