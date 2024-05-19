@@ -508,27 +508,27 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 }
 
 .tevily-event {
-  /*  width: 100%;*/
-  /*position: absolute;*/
-  /*top: 88%;*/
-  /*z-index: 1;*/
+    /*  width: 100%;*/
+    /*position: absolute;*/
+    /*top: 88%;*/
+    /*z-index: 1;*/
     margin-top: -80px;
     margin-bottom: 30px;
 }
 
 .tevily-event .tevily-event-card {
     background-color: white;
-  border: 1px solid whitesmoke;
-  height: 220px;
-  width: 200px;
-  align-content: center;
-  padding: 0 50px;
-  border-radius: 5px;
+    border: 1px solid whitesmoke;
+    height: 220px;
+    width: 200px;
+    align-content: center;
+    padding: 0 50px;
+    border-radius: 5px;
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     cursor: pointer;
 }
 
@@ -538,10 +538,10 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .tevily-event .tevily-event-card i {
     background-color: #9da89d47;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 50px;
-  color: red;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: red;
 }
 
 .tevily-event .tevily-event-card i:hover {
@@ -551,13 +551,13 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .tevily-event .tevily-event-card span {
     font-weight: 600;
-  font-size: 18px;
+    font-size: 18px;
 }
 
 
 .swiper-event {
-  width: 1150px;
-  height: 260px;
+    width: 1150px;
+    height: 260px;
 }
 
 .swiper-wrapper-event {
@@ -566,25 +566,25 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .swiper-button-prev-event {
     background-color: white;
-  border-radius: 50%;
-  padding: 25px;
-  color: black !important;
+    border-radius: 50%;
+    padding: 25px;
+    color: black !important;
     left: 0 !important;
     display: none !important;
 }
 
 .swiper-button-next-event {
-    background-color: white ;
-  border-radius: 50%;
-  padding: 25px;
-  color: black !important;
+    background-color: white;
+    border-radius: 50%;
+    padding: 25px;
+    color: black !important;
     right: 2px !important;
     display: none !important;
 }
 
 .swiper-event:hover .swiper-button-next-event, .swiper-event:hover .swiper-button-prev-event {
     display: flex !important;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
@@ -593,9 +593,9 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .trevily-trip-plan {
     display: flex;
-  margin: 100px auto;
-  justify-content: center;
-  overflow: hidden;
+    margin: 100px auto;
+    justify-content: center;
+    overflow: hidden;
     gap: 70px;
 }
 
@@ -605,20 +605,20 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .trevily-trip-plan .sub-title-trip {
     font-size: 20px;
-  font-family: 'Reey', sans-serif;
-  color: #E8604C;
+    font-family: 'Reey', sans-serif;
+    color: #E8604C;
     text-transform: capitalize;
 }
 
 .trevily-trip-plan .title-trip {
     font-size: 50px;
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .trevily-trip-plan .trip-desc {
     color: gray;
-  font-weight: 300;
-      margin: 30px 0;
+    font-weight: 300;
+    margin: 30px 0;
 }
 
 .trevily-trip-plan .plan-checkbox {
@@ -633,14 +633,14 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 .trevily-trip-plan .booking-btn {
     border: none;
     background-color: #E8604C;
-  height: 55px;
-  color: white;
-  padding: 0 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
+    height: 55px;
+    color: white;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
 }
 
 .trevily-trip-plan .booking-btn:hover {
@@ -649,7 +649,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .trevily-trip-plan .plan-pic {
     border-radius: 50%;
-  vertical-align: middle;
+    vertical-align: middle;
     width: 520px;
 }
 
@@ -661,49 +661,49 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .trevily-trip-plan .plan-pic .shape-1 {
     width: 100px;
-  height: 100px;
-  background-color: #faf5ee;
-  border-radius: 50%;
+    height: 100px;
+    background-color: #faf5ee;
+    border-radius: 50%;
     position: absolute;
-  animation: moveRight 5s infinite alternate;
+    animation: moveRight 5s infinite alternate;
     /*top: 215%;*/
     margin-top: -30rem;
 }
 
 @keyframes moveRight {
-  0% {
-    left: 52%;
-  }
-  100% {
-    left: 54%; /* Adjust this value to control how far the element moves */
-  }
+    0% {
+        left: 52%;
+    }
+    100% {
+        left: 54%; /* Adjust this value to control how far the element moves */
+    }
 }
 
 .trevily-trip-plan .plan-pic .shape-2 {
     width: 150px;
-  height: 150px;
-  background-color: #E8604C;
-  border-radius: 50%;
+    height: 150px;
+    background-color: #E8604C;
+    border-radius: 50%;
     position: absolute;
-  animation: moveLeft 5s infinite alternate;
+    animation: moveLeft 5s infinite alternate;
     /*top: 215%;*/
     margin-top: -7rem;
     z-index: -1;
 }
 
 @keyframes moveLeft {
-  0% {
-    left: 70%;
-  }
-  100% {
-    left: 72%; /* Adjust this value to control how far the element moves */
-  }
+    0% {
+        left: 70%;
+    }
+    100% {
+        left: 72%; /* Adjust this value to control how far the element moves */
+    }
 }
 
 .tevily-feature-tour {
     width: 100%;
-  margin: 0 auto;
-  text-align: center;
+    margin: 0 auto;
+    text-align: center;
     margin-bottom: 5rem;
 }
 
@@ -716,7 +716,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .tevily-feature-tour .feature-title {
     font-weight: 600;
-  font-size: 50px;
+    font-size: 50px;
     margin-bottom: 3rem;
 }
 
@@ -730,34 +730,37 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     /*overflow: hidden;*/
     /*padding: 0 30px;*/
 }
+
 .feature-slider {
     width: 383px !important;
-  padding: 0px 15px;
+    padding: 0px 15px;
     position: relative;
     height: 450px !important;
 }
+
 .swiper-feature .feature-card {
     position: absolute;
     width: 92%;
 }
+
 .swiper-feature .feature-data {
     position: absolute;
-  width: 92%;
-  bottom: 49px;
+    width: 92%;
+    bottom: 49px;
     padding: 20px;
 }
 
 .swiper-feature .feature-slider:hover .feature-data {
     background-color: white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px
 }
 
 .tevily-feature-tour .swiper-wrapper-feature .feature-card img {
     width: 100%;
-      border-radius: 10px;
+    border-radius: 10px;
     height: 400px;
-      filter: brightness(70%);
+    filter: brightness(70%);
 }
 
 .swiper-button-prev-feature {
@@ -770,11 +773,11 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .swiper-button-prev-feature, .swiper-button-next-feature {
     background-color: white;
-  padding: 25px;
-  border-radius: 50%;
+    padding: 25px;
+    border-radius: 50%;
     display: none !important;
     color: black;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .swiper-feature:hover .swiper-button-next-feature, .swiper-feature:hover .swiper-button-prev-feature {
@@ -794,8 +797,8 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .feature-data h5 {
     color: white;
-  text-align: start;
-  font-weight: 600;
+    text-align: start;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -803,14 +806,14 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     color: black;
 }
 
-.feature-data address i{
+.feature-data address i {
     color: #E8604C;
 }
 
 .feature-data address {
     color: white;
     text-align: start;
-  margin: 8px 0;
+    margin: 8px 0;
 }
 
 .swiper-feature .feature-slider:hover address {
@@ -831,40 +834,40 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 }
 
 .swiper-pagination-bullet {
- width: 15px !important;
+    width: 15px !important;
     height: 15px !important;
     cursor: pointer !important;
 }
 
 .exotic-place {
     width: 100%;
-  margin: 0 auto;
+    margin: 0 auto;
     margin-bottom: 0px;
-  text-align: center;
-  margin-bottom: 10rem;
+    text-align: center;
+    margin-bottom: 10rem;
 }
 
 .exotic-place .exotic-sub-title {
     color: #E8604C;
-  font-family: 'Reey', sans-serif;
-  font-size: 20px;
-  margin: 0;
+    font-family: 'Reey', sans-serif;
+    font-size: 20px;
+    margin: 0;
 }
 
 .exotic-place .exotic-title {
     font-weight: 600;
-  font-size: 50px;
-  margin-bottom: 3rem;
+    font-size: 50px;
+    margin-bottom: 3rem;
 }
 
 .exotic-place .location-img {
     margin: 0 auto;
-  width: 60%;
+    width: 60%;
 }
 
 .exotic-place .three-pic {
     display: flex;
-  gap: 10px;
+    gap: 10px;
     height: 240px;
     margin-bottom: 10px;
 }
@@ -876,8 +879,8 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .exotic-place .three-pic .pic-one-three img {
     width: 100%;
-        border-radius: 5px;
-vertical-align: middle;
+    border-radius: 5px;
+    vertical-align: middle;
     height: 100%;
 }
 
@@ -908,25 +911,25 @@ vertical-align: middle;
     width: 60%;
     margin: 0 auto;
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
     margin-bottom: 10rem;
 }
 
 .feature-price-rating .feature-price-rating-title {
     margin: 0;
-  font-weight: 600;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 .feature-price-rating .features-tours-card {
     display: flex;
-  align-items: center;
-  gap: 20px;
+    align-items: center;
+    gap: 20px;
     /*margin-bottom: 15px;*/
 }
 
 .feature-price-rating .location-view {
-      width: 100px;
+    width: 100px;
 }
 
 .feature-price-rating .location-view img {
@@ -942,9 +945,9 @@ vertical-align: middle;
     color: #E8604C;
 }
 
-.feature-price-rating .features-tours-card p{
+.feature-price-rating .features-tours-card p {
     margin: 0;
-  color: gray;
+    color: gray;
 }
 
 .feature-price-rating .features-tours-card p span {
@@ -965,13 +968,13 @@ vertical-align: middle;
     margin: 0 auto;
     margin-bottom: 10rem;
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .offering-tittle {
     font-size: 40px;
-  font-weight: 600;
+    font-weight: 600;
     width: 270px;
     height: 350px;
     align-content: center;
@@ -979,21 +982,21 @@ vertical-align: middle;
 
 .offering-card {
     border: 1px solid gray;
-  border-radius: 5px;
-  height: 350px;
-  align-content: center;
-  /*margin: 0 auto;*/
-  text-align: center;
+    border-radius: 5px;
+    height: 350px;
+    align-content: center;
+    /*margin: 0 auto;*/
+    text-align: center;
     width: 270px;
     margin-bottom: 20px;
 }
 
 .offering-card i {
     font-size: 50px;
-  padding: 50px;
-  border-radius: 50%;
-  background-color: #faf8f4;
-  color: #E8604C;
+    padding: 50px;
+    border-radius: 50%;
+    background-color: #faf8f4;
+    color: #E8604C;
 }
 
 .offering-card:hover i {
@@ -1003,35 +1006,35 @@ vertical-align: middle;
 
 .offering-card h5 {
     margin-top: 20px;
-  margin-bottom: 0;
-  font-size: 25px;
-  font-weight: 500;
-      padding: 0 25px;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 25px;
 }
 
 .offering .offering-card-last {
     border: 1px solid gray;
-  border-radius: 5px;
-  height: 350px;
-  align-content: center;
+    border-radius: 5px;
+    height: 350px;
+    align-content: center;
     padding-left: 2rem;
     width: 563px;
 }
 
 .offering .offering-card-last h3 {
     font-size: 30px;
-  font-weight: 600;
-      width: 250px;
+    font-weight: 600;
+    width: 250px;
 }
 
 .offering .offering-card-last button {
     border: none;
-  padding: 18px 25px;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 500;
-  border-radius: 5px;
+    padding: 18px 25px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    border-radius: 5px;
     background-color: #E8604C;
     color: white;
     margin-top: 20px;
@@ -1039,6 +1042,308 @@ vertical-align: middle;
 
 .offering .offering-card-last button:hover {
     background-color: #313041;
+}
+
+.world-leading {
+    background-image: url("https://gaviaspreview.com/wp/tevily/wp-content/uploads/2021/10/bg-5.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    align-content: center;
+}
+
+.world-leading .play-icon {
+    text-align: center;
+    color: red;
+    font-size: 70px;
+}
+
+.world-leading .world-leading-sub-tittle {
+    text-align: center;
+    font-size: 30px;
+    color: #E8604C;
+    font-family: 'Reey', sans-serif;
+}
+
+.world-leading .world-leading-tittle {
+    color: white;
+    width: 630px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.event-count {
+    background-color: white;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 40px 0;
+    justify-content: space-between;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 5rem;
+}
+
+.event-count .total-donations h5 {
+    text-align: center;
+    font-size: 50px;
+    color: #E8604C;
+    font-family: 'Reey', sans-serif;
+    margin: 0;
+}
+
+.event-count .total-donations {
+    border-right: 1px solid gray;
+    width: 287px;
+    text-align: center;
+}
+
+.event-count .our-volunteers {
+    border: none !important;
+}
+
+.event-count .total-donations span {
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.article {
+    margin: 10rem auto;
+    width: 60%;
+    text-align: center;
+    /*margin: 3rem 0;*/
+}
+
+.article .article-subtittle {
+    font-size: 25px;
+    color: #E8604C;
+    font-family: 'Reey', sans-serif;
+    margin: 0;
+}
+
+.article .article-tittle {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.article .article-slider {
+    width: 350px !important;
+    height: 20rem !important;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+}
+
+.article .article-slider .article-card img {
+    display: none;
+    width: 100%;
+    height: 20rem;
+    border-radius: 8px;
+    filter: brightness(70%);
+}
+
+.article .article-slider:hover .article-card img {
+    display: block;
+}
+
+.article .article-slider .article-data {
+    position: absolute;
+    width: 100%;
+    bottom: 65px;
+    padding: 0 2rem;
+}
+
+.article-data .admin-article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.article-data .admin-article img {
+    width: 3.5rem;
+    border: 2px solid #E8604C;
+}
+
+.article-data .admin-article div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.article-data .admin-article div span {
+    color: grey;
+}
+
+.article-slider:hover .article-data .admin-article div span {
+    color: white;
+}
+
+.article-data .admin-article div span i {
+    color: #E8604C;
+}
+
+.article-data h4 {
+    margin: 1rem 0;
+    font-size: 25px;
+    text-align: start;
+}
+
+.article-slider:hover .article-data h4 {
+    color: white;
+}
+
+.article-data .right-arrow {
+    font-size: 20px;
+    text-align: start;
+}
+
+.article-slider .article-data .right-arrow {
+    color: white;
+}
+
+.swiper-article {
+    padding: 0 20px !important;
+    margin: 3rem 0;
+}
+
+.swiper-button-prev-article, .swiper-button-next-article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: none !important;
+}
+
+.swiper-article:hover .swiper-button-prev-article, .swiper-article:hover .swiper-button-next-article {
+    display: flex !important;
+}
+
+.swiper-button-prev-article {
+    left: 0% !important;
+}
+
+.swiper-button-next-article {
+    right: 0% !important;
+}
+
+footer {
+    background-color: #313041;
+    position: relative;
+    height: 30rem;
+}
+
+.footer-top {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.footer-top .footer-logo img {
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo .footer-desc {
+    width: 20rem;
+    color: #a9a8b6;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo .num-mail-location {
+    color: #a9a8b6;
+    margin: 0.5rem 0;
+}
+
+.footer-logo .num-mail-location:hover {
+    color: #E8604C;
+    cursor: pointer;
+}
+
+.footer-logo .num-mail-location i {
+    color: #E8604C;
+}
+
+.footer-ul {
+    list-style-type: none;
+    padding: 0;
+    color: #a9a8b6;
+}
+
+.footer-ul li {
+    margin: 1rem 0;
+}
+
+.footer-ul li:hover {
+    color: white;
+}
+
+.footer-logo input {
+    outline: none;
+    border: none;
+    background-color: #0000003d;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    color: #a9a8b6;
+    text-align: center;
+}
+
+.footer-logo button {
+    margin-top: 1rem;
+  border: none;
+  background-color: #E8604C;
+  color: white;
+  width: 100%;
+  border-radius: 0.4rem;
+  height: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer-logo button:hover {
+    background-color: #dd7364;
+}
+
+.footer-logo .terms-condition {
+    color: #a9a8b6;
+    margin-top: 2rem;
+}
+
+.footer-logo .terms-condition:hover {
+    color: #E8604C;
+}
+
+.footer-bootom {
+    color: white;
+    position: absolute;
+  background-color: white;
+  right: 0%;
+  width: 82%;
+  height: 7rem;
+  bottom: 0px;
+      border-top-left-radius: 1rem;
+    align-content: center;
+}
+
+.footer-bootom .up-arrow-footer {
+    background-color: #E8604C;
+    height: 100%;
+  border-top-left-radius: 1rem;
+  align-content: center;
+  width: 10rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 
