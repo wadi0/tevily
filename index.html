@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./assets/favicon.ico">
     <title>Home 4 – Tevily – Travel & Tour Booking WordPress Theme</title>
     <link rel="stylesheet" href="assets/style.css">
@@ -148,7 +149,7 @@
                     </li>
                     <li class="menu-list">
                         <div class="menu-name">
-                            <span class="menu-name">Contact<i class="fa-solid fa-angle-down"></i></span>
+                            <span class="menu-name">Contact</span>
                             <div class="contact-list list-box">
                                 <div class="contact-active-line active-line"></div>
                             </div>
@@ -178,63 +179,69 @@
                 <p class="title-tagline">Checkout Beautiful Places Arround the World.</p>
             </div>
             <div class="search-form">
-                <div class="search-form-background">
-                    <div class="location-box">
-                        <div class="location-destination-box">
-                            <i class="fa-solid fa-location-dot box-icon"></i>
-                            <div class="location-destination">
-                                <div class="location">
-                                    <p class="m-0">location</p>
-                                    <i class="fa-solid fa-angle-down"></i>
+                <div class="search-form-background" id="search-form-background">
+                    <div class="location-activity">
+                        <div class="location-box">
+                            <div class="location-destination-box">
+                                <i class="fa-solid fa-location-dot box-icon"></i>
+                                <div class="location-destination">
+                                    <div class="location">
+                                        <p class="m-0">location</p>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <span class="destination">Destination</span>
                                 </div>
-                                <span class="destination">Destination</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="location-box destination-box">
-                        <div class="location-destination-box">
-                            <i class="fa-solid fa-square-person-confined box-icon"></i>
-                            <div class="location-destination">
+                        <div class="location-box ">
+                            <div class="location-destination-box">
+                                <i class="fa-solid fa-square-person-confined box-icon"></i>
+                                <div class="location-destination">
                             <span class="location">
                                 <p class="m-0">Type</p>
                                 <i class="fa-solid fa-angle-down"></i>
                             </span>
-                                <span class="destination">Activity</span>
+                                    <span class="destination">Activity</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="location-box date-box">
-                        <div class="location-destination-box">
-                            <i class="fa-regular fa-clock box-icon"></i>
-                            <div class="location-destination">
+                    <div class="date-guest">
+                        <div class="location-box date-box">
+                            <div class="location-destination-box">
+                                <i class="fa-regular fa-clock box-icon"></i>
+                                <div class="location-destination">
                             <span class="location">
                                 <p class="m-0">Date From</p>
                             </span>
-                                <span class="destination">Date From</span>
+                                    <span class="destination">Date From</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="location-box guests-box">
-                        <div class="location-destination-box">
-                            <i class="fa-solid fa-users box-icon"></i>
-                            <div class="location-destination">
+                        <div class="location-box guests-box ">
+                            <div class="location-destination-box">
+                                <i class="fa-solid fa-users box-icon"></i>
+                                <div class="location-destination">
                             <span class="location">
                                 <p class="m-0">Guests</p>
                             </span>
-                                <span class="destination">0</span>
+                                    <span class="destination">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="location-box filter-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"/>
-                        </svg>
+                    <div class="filter-search">
+                        <div id="filter-box" class="location-box filter-box border-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"/>
+                            </svg>
 
-                    </div>
-                    <div class="location-box search-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
+                        </div>
+                        <div class="location-box search-btn border-none">
+                            <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -519,7 +526,7 @@
                              alt="loaction-pic"/>
                     </div>
                     <div>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -537,7 +544,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -555,7 +562,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -573,7 +580,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -586,7 +593,7 @@
                              alt="loaction-pic"/>
                     </div>
                     <div>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -604,7 +611,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -622,7 +629,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -640,7 +647,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -660,7 +667,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -678,7 +685,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -696,7 +703,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -714,7 +721,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </span>
-                        <h6>Sri Lanka One Life Adventures</h6>
+                        <h6 class="ellipsis">Sri Lanka One Life Adventures</h6>
                         <p>From <span>$1475.00</span></p>
                     </div>
                 </div>
@@ -944,8 +951,22 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bootom">
-            <div class="up-arrow-footer"><i class="fa-solid fa-arrow-up"></i></div>
+        <div class="footer-bottom-container">
+            <div class="footer-bottom">
+                <div class="arrow-social-footer">
+                    <div class="up-arrow-footer">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+
+                    <ul>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-pinterest"></i></li>
+                    </ul>
+                </div>
+                <div class=" copyright">© Copyright 2021 by Gaviasthemes</div>
+            </div>
         </div>
     </footer>
 </div>

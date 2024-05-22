@@ -1,18 +1,3 @@
-// Function to show the video iframe and hide the image after 10 seconds
-// function showVideo() {
-//     document.getElementById("background-img").style.display = "none";
-//     document.getElementById("background-video").style.display = "block";
-// }
-//
-// // Function to hide the video iframe and show the image
-// function showImage() {
-//     document.getElementById("background-img").style.display = "block";
-//     document.getElementById("background-video").style.display = "none";
-// }
-//
-// // Show video after 10 seconds
-// setTimeout(showVideo, 5000);
-
 function showVideo() {
     document.getElementById("background-img").style.display = "none";
     document.getElementById("background-video").style.display = "block";
@@ -42,130 +27,164 @@ window.addEventListener('resize', adjustDisplay);
 
 // ------------sroll then navbar fixed------------
 
-// window.addEventListener('scroll', function () {
-//     var headerMenu = document.getElementById('headerMenu');
-//     if (window.scrollY > 0) {
-//         headerMenu.classList.add('navbar-fixed');
-//     } else {
-//         headerMenu.classList.remove('navbar-fixed');
-//     }
-// });
-
 window.addEventListener('scroll', function () {
     var headerMenu = document.getElementById('headerMenu');
-    if (window.innerWidth >= 300 && window.innerWidth <= 1024) {
-        headerMenu.classList.remove('navbar-fixed');
-    } else {
-        if (window.scrollY > 0) {
+    var headerTop = document.querySelector('.header-top');
+    if (window.innerWidth > 1024) {
+        if (window.scrollY > headerTop.clientHeight) {
             headerMenu.classList.add('navbar-fixed');
         } else {
             headerMenu.classList.remove('navbar-fixed');
         }
+    } else {
+        headerMenu.classList.remove('navbar-fixed');
     }
 });
 
-// window.addEventListener('resize', function () {
-//     var headerMenu = document.getElementById('headerMenu');
-//     if (window.innerWidth < 300 || window.innerWidth > 1024) {
-//         if (window.scrollY > 0) {
-//             headerMenu.classList.add('navbar-fixed');
-//         } else {
-//             headerMenu.classList.remove('navbar-fixed');
-//         }
-//     } else {
-//         headerMenu.classList.add('navbar-fixed');
-//     }
-// });
+
+function updateFlexDirection() {
+    const flexContainer = document.getElementById('search-form-background');
+    if (window.innerWidth <= 800) {
+        flexContainer.classList.add('column');
+    } else {
+        flexContainer.classList.remove('column');
+    }
+}
+
+
+function displayHideFilter() {
+    const filterRemove = document.getElementById('filter-box');
+    if (window.innerWidth <= 800) {
+        filterRemove.classList.add('filter-hide');
+    } else {
+        filterRemove.classList.remove('filter-hide');
+    }
+}
+
+updateFlexDirection();
+displayHideFilter();
+
+// Run on window resize
+window.addEventListener('resize', function () {
+    updateFlexDirection();
+    displayHideFilter();
+});
 
 
 const swiperEvent = new Swiper('.swiper-event', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
-      autoplay: {
-    delay: 5000, // milliseconds
-    disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-  },
+    autoplay: {
+        delay: 5000, // milliseconds
+        disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+    },
 
     slidesPerView: 5,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+    breakpoints: {
+        // when window width is >= 1200px
+        1200: {
+            slidesPerView: 5,
+        },
+        // when window width is >= 1024px and < 1200px
+        1024: {
+            slidesPerView: 4,
+        },
+        // when window width is >= 560px and < 1024px
+        560: {
+            slidesPerView: 3,
+        },
+        // when window width is >= 300px and < 560px
+        300: {
+            slidesPerView: 1,
+        },
+        // when window width is < 300px
+        0: {
+            slidesPerView: 1,
+        }
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
+window.addEventListener('resize', function () {
+    swiperEvent.update();
 });
 
 const swiperFeature = new Swiper('.swiper-feature', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
-      autoplay: {
-    delay: 5000, // milliseconds
-    disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-  },
+    autoplay: {
+        delay: 5000, // milliseconds
+        disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+    },
 
     slidesPerView: 4,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-      clickable: true,
-  },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
 });
 
 
-
 const swiperArticle = new Swiper('.swiper-article', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
-  //     autoplay: {
-  //   delay: 5000, // milliseconds
-  //   disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-  // },
+    //     autoplay: {
+    //   delay: 5000, // milliseconds
+    //   disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+    // },
 
     slidesPerView: 3,
     spaceBetween: 30,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-      clickable: true,
-  },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
 });
