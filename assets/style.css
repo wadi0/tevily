@@ -937,7 +937,8 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 }
 
 .offering {
-    width: 60%;
+    max-width: 1200px;
+    padding: 0 1rem;
     margin: 0 auto;
     margin-bottom: 10rem;
     display: flex;
@@ -948,7 +949,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 .offering-tittle {
     font-size: 40px;
     font-weight: 600;
-    width: 270px;
+    width: 23.5%;
     height: 350px;
     align-content: center;
 }
@@ -959,7 +960,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     height: 350px;
     align-content: center;
     text-align: center;
-    width: 270px;
+    width: 23.5%;
     margin-bottom: 20px;
 }
 
@@ -990,7 +991,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     height: 350px;
     align-content: center;
     padding-left: 2rem;
-    width: 563px;
+    width: 49%;
 }
 
 .offering .offering-card-last h3 {
@@ -1630,6 +1631,7 @@ footer {
     .offering .offering-card-last {
         height: auto;
         padding: 3rem 2rem;
+        width: 100%;
     }
 
     .world-leading {
@@ -1959,7 +1961,12 @@ footer {
     }
 
     .offering-tittle {
-        font-size: 35px;
+        font-size: 25px;
+        width: 49%;
+    }
+
+    .offering .offering-card {
+        width: 49%;
     }
 
     .world-leading {
@@ -2116,22 +2123,10 @@ footer {
         max-width: 175px;
     }
 
-    .offering {
-        width: 95%;
-        justify-content: space-between;
-    }
-
     .offering-tittle {
-        width: 300px;
+        font-size: 35px;
     }
 
-    .offering-card {
-        width: 300px;
-    }
-
-    .offering .offering-card-last {
-        width: 100%;
-    }
 
     .event-count {
         width: 95%;
