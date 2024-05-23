@@ -76,12 +76,13 @@ const swiperEvent = new Swiper('.swiper-event', {
     direction: 'horizontal',
     loop: true,
 
-    autoplay: {
-        delay: 5000, // milliseconds
-        disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-    },
+    // autoplay: {
+    //     delay: 5000, // milliseconds
+    //     disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+    // },
 
     slidesPerView: 5,
+    spaceBetween: 30,
 
     breakpoints: {
         // when window width is >= 1200px
@@ -93,8 +94,11 @@ const swiperEvent = new Swiper('.swiper-event', {
             slidesPerView: 4,
         },
         // when window width is >= 560px and < 1024px
-        560: {
+        724: {
             slidesPerView: 3,
+        },
+        560: {
+            slidesPerView: 2,
         },
         // when window width is >= 300px and < 560px
         300: {
@@ -132,12 +136,13 @@ const swiperFeature = new Swiper('.swiper-feature', {
     direction: 'horizontal',
     loop: true,
 
-    autoplay: {
-        delay: 5000, // milliseconds
-        disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-    },
+    // autoplay: {
+    //     delay: 5000, // milliseconds
+    //     disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+    // },
 
     slidesPerView: 4,
+    spaceBetween: 30,
 
     // If we need pagination
     pagination: {

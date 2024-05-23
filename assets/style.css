@@ -530,7 +530,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     background-color: white;
     border: 1px solid whitesmoke;
     height: 220px;
-    width: 200px;
+    width: 100%;
     align-content: center;
     padding: 0 50px;
     border-radius: 5px;
@@ -568,11 +568,13 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 .swiper-event {
     width: 1150px;
     height: 260px;
+    padding: 0 1rem !important;
+    margin: 0 auto;
 }
 
-.swiper-wrapper-event {
-    margin-left: 15px;
-}
+/*.swiper-wrapper-event {*/
+/*    margin: 0 auto;*/
+/*}*/
 
 .swiper-button-prev-event {
     background-color: white;
@@ -729,7 +731,8 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 }
 
 .tevily-feature-tour .swiper-feature {
-    width: 80%;
+    max-width: 1150px;
+  margin: 0 auto;
 }
 
 .feature-slider {
@@ -1718,6 +1721,7 @@ footer {
 
     .swiper-event {
         width: 95%;
+        padding: 0 1rem !important;
     }
 
 }
@@ -1873,6 +1877,12 @@ footer {
 
     .animat-background-data {
         height: 1100px !important;
+    }
+
+    .swiper-event {
+        width: 95%;
+        height: 260px;
+        padding: 0 1rem !important;
     }
 
     .trevily-trip-plan {
