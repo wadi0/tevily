@@ -18,9 +18,10 @@ header .header-top .header-top-control {
     margin: 0 auto;
     height: 45px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 480px;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
 
 header .header-top .header-top-control ul {
@@ -110,9 +111,11 @@ header .header-menu {
 
 header .header-menu .header-menu-control {
     display: flex;
-    justify-content: center;
+    justify-content: space-between ;
     align-items: center;
-    gap: 270px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .navbar-fixed {
@@ -291,7 +294,6 @@ header .header-menu .header-menu-control .header-menu-right {
     align-items: center;
     list-style-type: none;
     color: white;
-    gap: 20px;
     margin: 0;
     padding: 0;
 }
@@ -372,14 +374,17 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     font-size: 20px;
 }
 
+.animat-background-data .search-form {
+    padding: 0 1rem;
+}
+
 .animat-background-data .search-form-background {
     display: flex;
-    justify-content: center;
     background-color: white;
-    width: fit-content;
     margin: 0 auto;
     border-radius: 5px;
     margin-top: 35px;
+    max-width: 1200px;
 }
 
 .location-activity, .date-guest, .filter-search {
@@ -387,12 +392,31 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     align-items: center;
 }
 
+.location-activity {
+    width: 40%;
+}
+
+.date-guest {
+    width: 35%;
+}
+
+.filter-search {
+    width: 25%;
+}
+
 .animat-background-data .search-form .location-box {
     border-right: 1px solid lightgray;
     padding: 0 15px;
     height: 70px;
     align-content: center;
-    width: 220px;
+}
+
+.animat-background-data .search-form .location-container {
+    width: 55%;
+}
+
+.animat-background-data .search-form .activity-container {
+    width: 45%;
 }
 
 .animat-background-data .search-form .location-box .location-destination-box {
@@ -440,15 +464,15 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 }
 
 .search-form .date-box {
-    width: 200px !important;
+    width: 55%;
 }
 
 .search-form .guests-box {
-    width: 180px !important;
+    width: 45%;
 }
 
 .search-form .filter-box {
-    width: 80px !important;
+    width: 30%;
     text-align: center;
 }
 
@@ -458,7 +482,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 }
 
 .search-form .search-btn {
-    width: 180px !important;
+    width: 70%;
     background-color: #E8604C;
     border-right: none !important;
     border-top-right-radius: 5px;
@@ -1380,11 +1404,6 @@ footer {
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
 
-    header .header-top .header-top-control {
-        justify-content: flex-start;
-        padding: 0 15px;
-    }
-
     header .header-top .header-top-control .header-top-left {
         display: none;
     }
@@ -1399,12 +1418,6 @@ footer {
 
     header .header-top .header-top-control .header-top-right .become-local-guide {
         display: none;
-    }
-
-    header .header-menu .header-menu-control {
-        justify-content: space-between;
-        padding: 0 15px;
-        gap: 0;
     }
 
     header .header-menu .header-menu-control .header-menu-left .logo-white {
@@ -1429,6 +1442,7 @@ footer {
 
     header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
         display: block;
+        margin-left: 1rem;
     }
 
     header .header-menu .header-menu-control .header-menu-right li i {
@@ -1463,7 +1477,6 @@ footer {
     .location-activity, .date-guest {
         flex-direction: column;
         width: auto !important;
-        margin-bottom: 10px;
     }
 
     .animat-background-data .search-form .location-box {
@@ -1475,13 +1488,11 @@ footer {
 
     .animat-background-data .search-form .border-none {
         border: none !important;
-        padding: 0 15px;
+        height: 3rem;
     }
 
     .animat-background-data .search-form-background {
-        padding: 15px;
-        gap: 25px;
-        width: 95%;
+        padding: 0 15px;
     }
 
     .search-form .search-btn {
@@ -1489,9 +1500,8 @@ footer {
     }
 
     .filter-search {
-        justify-content: center;
-        gap: 10px;
         width: auto !important;
+        height: 4.5rem;
     }
 
     .animat-background-data .sub-title {
@@ -1714,17 +1724,13 @@ footer {
 
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
 
-    header .header-top .header-top-control {
-        display: block;
-        padding: 0 15px;
-    }
-
     header .header-top .header-top-control .header-top-left {
         display: none;
     }
 
     header .header-top .header-top-control .header-top-right {
         justify-content: space-between;
+        width: 100%;
     }
 
     header .header-top .header-top-control .header-top-right ul {
@@ -1759,12 +1765,6 @@ footer {
         background-color: white;
     }
 
-    header .header-menu .header-menu-control {
-        justify-content: space-between;
-        padding: 0 15px;
-        gap: 0;
-    }
-
     header .header-menu .header-menu-control .header-menu-left .logo-white {
         display: none;
     }
@@ -1787,6 +1787,7 @@ footer {
 
     header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
         display: block;
+        margin-left: 1rem;
     }
 
     header .header-menu .header-menu-control .header-menu-right li i {
@@ -1829,8 +1830,9 @@ footer {
     }
 
     .location-activity, .date-guest {
-        flex-direction: column;
         width: auto !important;
+        gap: 1rem;
+        height: 4.4rem;
     }
 
     .animat-background-data .search-form .location-box {
@@ -1842,7 +1844,7 @@ footer {
 
     .animat-background-data .search-form .border-none {
         border: none !important;
-        padding: 0 15px;
+        height: 3.5rem;
     }
 
     .search-form .filter-box {
@@ -1851,7 +1853,6 @@ footer {
 
     .animat-background-data .search-form-background {
         flex-direction: column;
-        width: 95%;
         padding: 0 1rem;
     }
 
@@ -2037,40 +2038,12 @@ footer {
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
 
-    header .header-top .header-top-control {
-        padding: 0 15px;
-        justify-content: space-between;
-        gap: 0;
-    }
-
-    header .header-menu .header-menu-control {
-        gap: 0px;
-        justify-content: space-between;
-        padding: 0 15px;
-    }
-
     .animat-background iframe {
         width: 92rem;
     }
 
     header .header-menu .header-menu-control .header-menu-left .logo-black {
         display: none;
-    }
-
-    .animat-background-data .search-form .location-box {
-        width: 200px;
-    }
-
-    .search-form .destination-box {
-        width: 200px !important;
-    }
-
-    .search-form .date-box {
-        width: 160px !important;
-    }
-
-    .search-form .guests-box {
-        width: 160px !important;
     }
 
     .trevily-trip-plan {
