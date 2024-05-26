@@ -142,7 +142,33 @@ const swiperFeature = new Swiper('.swiper-feature', {
     // },
 
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 20,
+
+    breakpoints: {
+        // when window width is >= 1200px
+        1200: {
+            slidesPerView: 4,
+        },
+        // when window width is >= 1024px and < 1200px
+        1024: {
+            slidesPerView: 3,
+        },
+        // when window width is >= 560px and < 1024px
+        800: {
+            slidesPerView: 2,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        // when window width is >= 300px and < 560px
+        300: {
+            slidesPerView: 1,
+        },
+        // when window width is < 300px
+        0: {
+            slidesPerView: 1,
+        }
+    },
 
     // If we need pagination
     pagination: {
@@ -162,6 +188,10 @@ const swiperFeature = new Swiper('.swiper-feature', {
     },
 });
 
+window.addEventListener('resize', function () {
+    swiperFeature.update();
+});
+
 
 const swiperArticle = new Swiper('.swiper-article', {
     // Optional parameters
@@ -175,6 +205,35 @@ const swiperArticle = new Swiper('.swiper-article', {
 
     slidesPerView: 3,
     spaceBetween: 30,
+
+    breakpoints: {
+        // when window width is >= 1200px
+        1200: {
+            slidesPerView: 3,
+        },
+        // when window width is >= 1024px and < 1200px
+        1024: {
+            slidesPerView: 3,
+        },
+        // when window width is >= 560px and < 1024px
+        800: {
+            slidesPerView: 2,
+        },
+        721: {
+            slidesPerView: 2
+        },
+        720: {
+            slidesPerView: 1,
+        },
+        // when window width is >= 300px and < 560px
+        300: {
+            slidesPerView: 1,
+        },
+        // when window width is < 300px
+        0: {
+            slidesPerView: 1,
+        }
+    },
 
     // If we need pagination
     pagination: {
@@ -192,4 +251,8 @@ const swiperArticle = new Swiper('.swiper-article', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+});
+
+window.addEventListener('resize', function () {
+    swiperArticle.update();
 });
