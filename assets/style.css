@@ -4,6 +4,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: initial;
+}
+
 header {
     position: absolute;
     z-index: 100;
@@ -137,6 +145,10 @@ header .header-menu .header-menu-control .header-menu-left {
 
 header .header-menu .header-menu-control .header-menu-left .logo-black {
     display: none !important;
+}
+
+header .header-menu .header-menu-control .header-menu-left .menu-logo a {
+    text-decoration: none;
 }
 
 header .header-menu .header-menu-control .header-menu-left .menu-logo img {
@@ -422,6 +434,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     padding: 0 15px;
     height: 70px;
     align-content: center;
+    cursor: pointer;
 }
 
 .animat-background-data .search-form .location-container {
@@ -492,6 +505,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 .search-form .filter-box svg {
     width: 40px;
     color: #E8604C;
+    cursor: pointer;
 }
 
 .search-form .search-btn {
@@ -565,16 +579,22 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     border-radius: 50%;
     font-size: 50px;
     color: red;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-content: center;
 }
 
-.tevily-event .tevily-event-card i:hover {
+.tevily-event .tevily-event-card:hover i {
     background-color: #E8604C;
     color: white;
+    transition: 5s;
 }
 
 .tevily-event .tevily-event-card span {
     font-weight: 600;
     font-size: 18px;
+      text-wrap: nowrap;
 }
 
 
@@ -622,6 +642,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     justify-content: center;
     overflow: hidden;
     gap: 70px;
+    max-width: 1200px;
 }
 
 .trevily-trip-plan .trip-plan {
@@ -760,16 +781,6 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     position: relative;
 }
 
-.feature-card-data {
-    /*margin-bottom: 3rem;*/
-}
-
-/*.swiper-feature .feature-card {*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    bottom: 50px;*/
-/*}*/
-
 .swiper-feature .feature-data {
     position: absolute;
     width: 100%;
@@ -822,14 +833,21 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     margin-bottom: 5px;
 }
 
+.feature-data .rating-camera .camera-video {
+    cursor: pointer;
+}
+
 .feature-data h5 {
-    color: white;
     text-align: start;
     font-weight: 600;
     margin: 0;
 }
 
-.swiper-feature .feature-slider:hover .feature-data h5 {
+.feature-data h5 a {
+    color: white;
+}
+
+.swiper-feature .feature-slider:hover .feature-data h5 a {
     color: black;
 }
 
@@ -868,6 +886,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .exotic-place {
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10rem;
@@ -888,19 +907,20 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .exotic-place .location-img {
     margin: 0 auto;
-    width: 60%;
+    padding: 0 15px;
+    cursor: pointer;
 }
 
 .exotic-place .three-pic {
     display: flex;
     gap: 10px;
-    height: 240px;
+    /*height: 240px;*/
     margin-bottom: 10px;
 }
 
-.exotic-place .three-pic .pic-one-three {
-    width: 300px;
-}
+/*.exotic-place .three-pic .pic-one-three {*/
+/*    width: 300px;*/
+/*}*/
 
 .exotic-place .three-pic .pic-one-three img {
     width: 100%;
@@ -958,14 +978,16 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .feature-price-rating .location-view img {
     width: 100%;
-    border-radius: 5px
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.feature-price-rating .features-tours-card h6 {
+.feature-price-rating .features-tours-card a {
     font-weight: 600;
+    color: black;
 }
 
-.feature-price-rating .features-tours-card h6:hover {
+.feature-price-rating .features-tours-card h6:hover a{
     color: #E8604C;
 }
 
@@ -1035,6 +1057,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     font-size: 25px;
     font-weight: 500;
     padding: 0 25px;
+    cursor: pointer;
 }
 
 .offering .offering-card-last {
@@ -1188,6 +1211,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
   padding: 0 2rem;
   height: 100%;
   align-content: center;
+    cursor: pointer;
 }
 
 .article-data .admin-article {
@@ -1305,13 +1329,15 @@ footer {
 }
 
 .footer-logo .num-mail-location {
-    color: #a9a8b6;
     margin: 0.5rem 0;
 }
 
-.footer-logo .num-mail-location:hover {
+.footer-logo .num-mail-location A {
+    color: #a9a8b6;
+}
+
+.footer-logo .num-mail-location:hover a {
     color: #E8604C;
-    cursor: pointer;
 }
 
 .footer-logo .num-mail-location i {
@@ -1328,7 +1354,11 @@ footer {
     margin: 1rem 0;
 }
 
-.footer-ul li:hover {
+.footer-ul li a {
+    color: #a9a8b6;
+}
+
+.footer-ul li:hover a {
     color: white;
 }
 
@@ -1362,11 +1392,15 @@ footer {
 }
 
 .footer-logo .terms-condition {
-    color: #a9a8b6;
+
     margin-top: 2rem;
 }
 
-.footer-logo .terms-condition:hover {
+.footer-logo .terms-condition a {
+    color: #a9a8b6;
+}
+
+.footer-logo .terms-condition:hover a {
     color: #E8604C;
 }
 
@@ -1394,13 +1428,16 @@ footer {
 
 .up-arrow-footer {
     background-color: #ff6347;
-    color: #fff;
     padding: 10px;
     cursor: pointer;
     width: 100px;
     height: 6rem;
     align-content: center;
     border-top-left-radius: 10px;
+}
+
+.up-arrow-footer a {
+    color: white;
 }
 
 .arrow-social-footer ul {
@@ -1415,12 +1452,20 @@ footer {
     background-color: antiquewhite;
     border-radius: 50%;
     padding: 10px 14px;
+}
+
+.arrow-social-footer li a {
     color: black;
 }
 
-.arrow-social-footer li:hover {
+.arrow-social-footer li:hover{
     background-color: #E8604C;
+    transition: 5s;
+}
+
+.arrow-social-footer li:hover a {
     color: white;
+    transition: 5s;
 }
 
 .copyright {
@@ -1445,6 +1490,12 @@ footer {
     display: none !important;
 }
 
+.ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 250px;
+    }
 
 /*-----------------------------------------------------------------*/
 /*--------------------------responsive----------------------------*/
@@ -1991,10 +2042,6 @@ footer {
         font-size: 35px;
     }
 
-    .exotic-place .location-img {
-        width: 95%;
-    }
-
     .exotic-place .three-pic .pic-one-three {
         width: 400px;
     }
@@ -2144,9 +2191,9 @@ footer {
         margin-bottom: 5rem;
     }
 
-    .exotic-place .location-img {
-        width: 95%;
-    }
+    /*.exotic-place .location-img {*/
+    /*    width: 95%;*/
+    /*}*/
 
     .exotic-place .three-pic .pic-one-three {
         width: 400px;
@@ -2157,9 +2204,6 @@ footer {
     }
 
     .ellipsis {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         max-width: 175px;
     }
 

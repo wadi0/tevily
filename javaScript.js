@@ -136,10 +136,10 @@ const swiperFeature = new Swiper('.swiper-feature', {
     direction: 'horizontal',
     loop: true,
 
-    // autoplay: {
-    //     delay: 5000, // milliseconds
-    //     disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-    // },
+    autoplay: {
+        delay: 5000, // milliseconds
+        disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+    },
 
     slidesPerView: 4,
     spaceBetween: 20,
@@ -198,10 +198,10 @@ const swiperArticle = new Swiper('.swiper-article', {
     direction: 'horizontal',
     loop: true,
 
-    //     autoplay: {
-    //   delay: 5000, // milliseconds
-    //   disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-    // },
+        autoplay: {
+      delay: 5000, // milliseconds
+      disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+    },
 
     slidesPerView: 3,
     spaceBetween: 30,
