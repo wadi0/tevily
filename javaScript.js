@@ -76,10 +76,10 @@ const swiperEvent = new Swiper('.swiper-event', {
     direction: 'horizontal',
     loop: true,
 
-    // autoplay: {
-    //     delay: 5000, // milliseconds
-    //     disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-    // },
+    autoplay: {
+        delay: 5000, // milliseconds
+        disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+    },
 
     slidesPerView: 5,
     spaceBetween: 30,

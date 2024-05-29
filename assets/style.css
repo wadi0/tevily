@@ -612,19 +612,22 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 .swiper-button-prev-event {
     background-color: white;
     border-radius: 50%;
-    padding: 25px;
+    padding: 22px;
     color: black !important;
     left: 0 !important;
     display: none !important;
+    font-size: 20px;
 }
 
 .swiper-button-next-event {
     background-color: white;
     border-radius: 50%;
-    padding: 25px;
+    padding: 22px;
     color: black !important;
     right: 2px !important;
     display: none !important;
+    font-size: 20px;
+
 }
 
 .swiper-event:hover .swiper-button-next-event, .swiper-event:hover .swiper-button-prev-event {
@@ -810,11 +813,12 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .swiper-button-prev-feature, .swiper-button-next-feature {
     background-color: white;
-    padding: 25px;
+    padding: 22px;
     border-radius: 50%;
     display: none !important;
     color: black;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: 20px;
 }
 
 .swiper-feature:hover .swiper-button-next-feature, .swiper-feature:hover .swiper-button-prev-feature {
@@ -1281,11 +1285,12 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .swiper-button-prev-article, .swiper-button-next-article {
     background-color: white;
-    padding: 20px;
+    padding: 22px;
     border-radius: 50%;
     color: black;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     display: none !important;
+    font-size: 20px;
 }
 
 .swiper-article:hover .swiper-button-prev-article, .swiper-article:hover .swiper-button-next-article {
