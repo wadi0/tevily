@@ -4,6 +4,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+
 a {
     text-decoration: none !important;
 }
@@ -121,7 +122,7 @@ header .header-menu {
 
 header .header-menu .header-menu-control {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -409,7 +410,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     margin: 0 auto;
     border-radius: 5px;
     margin-top: 35px;
-    max-width: 1200px;
+    max-width: 1150px;
 }
 
 .location-activity, .date-guest, .filter-search {
@@ -439,10 +440,25 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .animat-background-data .search-form .location-container {
     width: 55%;
+    position: relative;
 }
 
 .animat-background-data .search-form .activity-container {
     width: 45%;
+    position: relative;
+}
+
+.animat-background-data .search-form .activity-container .activity-list {
+    position: absolute;
+    margin-top: 1rem;
+    padding: 10px 15px;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: -15px;
+    width: 205px;
+    z-index: 1;
+    display: none;
 }
 
 .animat-background-data .search-form .location-box .location-destination-box {
@@ -461,6 +477,18 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.location-activity .location-list {
+    position: absolute;
+    margin-top: 1rem;
+    padding: 10px 15px;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: -15px;
+    width: 252px;
+    display: none;
 }
 
 .location-destination-box .location-destination .location {
@@ -594,7 +622,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 .tevily-event .tevily-event-card span {
     font-weight: 600;
     font-size: 18px;
-      text-wrap: nowrap;
+    text-wrap: nowrap;
 }
 
 
@@ -769,7 +797,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .tevily-feature-tour .swiper-feature {
     max-width: 1175px;
-  margin: 0 auto;
+    margin: 0 auto;
     padding: 0 1rem;
     padding-bottom: 4rem;
     align-content: center;
@@ -991,7 +1019,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     color: black;
 }
 
-.feature-price-rating .features-tours-card h6:hover a{
+.feature-price-rating .features-tours-card h6:hover a {
     color: #E8604C;
 }
 
@@ -1210,11 +1238,11 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .article .article-slider .article-data {
     position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding: 0 2rem;
-  height: 100%;
-  align-content: center;
+    width: 100%;
+    bottom: 0;
+    padding: 0 2rem;
+    height: 100%;
+    align-content: center;
     cursor: pointer;
 }
 
@@ -1268,7 +1296,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .swiper-article {
     max-width: 1175px;
-  margin: 0 auto;
+    margin: 0 auto;
     padding: 0 1rem;
     padding-bottom: 4rem;
     align-content: center;
@@ -1463,7 +1491,7 @@ footer {
     color: black;
 }
 
-.arrow-social-footer li:hover{
+.arrow-social-footer li:hover {
     background-color: #E8604C;
     transition: 5s;
 }
@@ -1496,11 +1524,11 @@ footer {
 }
 
 .ellipsis {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 250px;
-    }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
 
 /*-----------------------------------------------------------------*/
 /*--------------------------responsive----------------------------*/
@@ -1828,8 +1856,8 @@ footer {
     }
 
     .article-card {
-    height: 17rem;
-}
+        height: 17rem;
+    }
 
 }
 
@@ -2147,12 +2175,10 @@ footer {
     }
 
     .article-card {
-    height: 20rem;
-}
+        height: 20rem;
+    }
 
 }
-
-
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
@@ -2199,7 +2225,6 @@ footer {
     /*.exotic-place .location-img {*/
     /*    width: 95%;*/
     /*}*/
-
     .exotic-place .three-pic .pic-one-three {
         width: 400px;
     }

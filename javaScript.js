@@ -198,9 +198,9 @@ const swiperArticle = new Swiper('.swiper-article', {
     direction: 'horizontal',
     loop: true,
 
-        autoplay: {
-      delay: 5000, // milliseconds
-      disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+    autoplay: {
+        delay: 5000, // milliseconds
+        disableOnInteraction: false, // prevent auto-play from stopping on user interaction
     },
 
     slidesPerView: 3,
@@ -256,3 +256,63 @@ const swiperArticle = new Swiper('.swiper-article', {
 window.addEventListener('resize', function () {
     swiperArticle.update();
 });
+
+// -----------destination----------
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Get the destination span element
+    const destinationSpan = document.querySelector('.location-destination .destination');
+    // Get the location list element
+    const locationList = document.querySelector('.location-list');
+    // Get the location destination box element
+    const locationDestinationBox = document.querySelector('.location-destination-box');
+
+    // Show the list when the destination box is clicked
+    locationDestinationBox.addEventListener('click', () => {
+        locationList.style.display = locationList.style.display === 'none' ? 'block' : 'none';
+    });
+
+    // Get all list items inside the location list
+    const locationItems = document.querySelectorAll('.location-list li');
+
+    // Loop through each list item and add a click event listener
+    locationItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Update the destination span's text content to the clicked item's value
+            destinationSpan.textContent = item.getAttribute('value');
+            // Hide the location list
+            locationList.style.display = 'none';
+        });
+    });
+});
+
+
+//--------activity----------------
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Get the destination span element
+    const activitySpan = document.querySelector('.location-destination .activity');
+    // Get the location list element
+    const activityList = document.querySelector('.activity-list');
+    // Get the location destination box element
+    const locationDestinationBox = document.querySelector('.activity-destination-box');
+
+    // Show the list when the destination box is clicked
+    locationDestinationBox.addEventListener('click', () => {
+        activityList.style.display = activityList.style.display === 'none' ? 'block' : 'none';
+    });
+
+    // Get all list items inside the location list
+    const activityItems = document.querySelectorAll('.activity-list li');
+
+    // Loop through each list item and add a click event listener
+    activityItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Update the destination span's text content to the clicked item's value
+            activitySpan.textContent = item.getAttribute('value');
+            // Hide the location list
+            activityList.style.display = 'none';
+        });
+    });
+});
+
+
