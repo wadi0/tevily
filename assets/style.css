@@ -466,6 +466,9 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     align-items: center;
     gap: 15px;
     cursor: pointer;
+  /*  height: 70px;*/
+  /*align-content: center;*/
+  /*position: relative;*/
 }
 
 .location-destination-box .box-icon {
@@ -489,6 +492,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     margin-left: -15px;
     width: 252px;
     display: none;
+    z-index: 1;
 }
 
 .location-destination-box .location-destination .location {
@@ -1529,6 +1533,24 @@ footer {
     text-overflow: ellipsis;
     max-width: 250px;
 }
+
+.up-arrow {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+
+/*.date-field {*/
+/*    width: 222px;*/
+/*  margin-left: -16px;*/
+/*  position: absolute;*/
+/*  height: 70px;*/
+/*  top: 0px;*/
+/*  border: none;*/
+/*  opacity: 0;*/
+/*}*/
+
 
 /*-----------------------------------------------------------------*/
 /*--------------------------responsive----------------------------*/

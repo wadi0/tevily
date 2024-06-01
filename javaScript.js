@@ -257,62 +257,98 @@ window.addEventListener('resize', function () {
     swiperArticle.update();
 });
 
-// -----------destination----------
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Get the destination span element
-    const destinationSpan = document.querySelector('.location-destination .destination');
-    // Get the location list element
-    const locationList = document.querySelector('.location-list');
-    // Get the location destination box element
-    const locationDestinationBox = document.querySelector('.location-destination-box');
+// -----------destination--activity----------
 
-    // Show the list when the destination box is clicked
-    locationDestinationBox.addEventListener('click', () => {
-        locationList.style.display = locationList.style.display === 'none' ? 'block' : 'none';
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Location List Functionality
+    const destinationSpan = document.querySelector('.location-destination .destination');
+    const locationList = document.querySelector('.location-list');
+    const locationDestinationBox = document.querySelector('.location-destination-box');
+    const locationDownIcon = locationDestinationBox.querySelector('.fa-angle-down');
+    const locationUpIcon = locationDestinationBox.querySelector('.fa-angle-up');
+
+    // Set initial state
+    locationList.style.display = 'none';
+    locationDownIcon.style.display = 'inline';
+    locationUpIcon.style.display = 'none';
+
+    locationDestinationBox.addEventListener('click', (e) => {
+        const isLocationListVisible = locationList.style.display === 'block';
+        locationList.style.display = isLocationListVisible ? 'none' : 'block';
+        locationDownIcon.style.display = isLocationListVisible ? 'inline' : 'none';
+        locationUpIcon.style.display = isLocationListVisible ? 'none' : 'inline';
+        activityList.style.display = 'none'; // Hide the activity list
+        activityDownIcon.style.display = 'inline'; // Show the down icon for activity
+        activityUpIcon.style.display = 'none'; // Hide the up icon for activity
+        e.stopPropagation();
     });
 
-    // Get all list items inside the location list
     const locationItems = document.querySelectorAll('.location-list li');
 
-    // Loop through each list item and add a click event listener
     locationItems.forEach(item => {
-        item.addEventListener('click', () => {
-            // Update the destination span's text content to the clicked item's value
+        item.addEventListener('click', (e) => {
+            e.stopPropagation();
             destinationSpan.textContent = item.getAttribute('value');
-            // Hide the location list
             locationList.style.display = 'none';
+            locationDownIcon.style.display = 'inline';
+            locationUpIcon.style.display = 'none';
         });
     });
-});
 
-
-//--------activity----------------
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    // Get the destination span element
+    // Activity List Functionality
     const activitySpan = document.querySelector('.location-destination .activity');
-    // Get the location list element
     const activityList = document.querySelector('.activity-list');
-    // Get the location destination box element
-    const locationDestinationBox = document.querySelector('.activity-destination-box');
+    const activityDestinationBox = document.querySelector('.activity-destination-box');
+    const activityDownIcon = activityDestinationBox.querySelector('.fa-angle-down');
+    const activityUpIcon = activityDestinationBox.querySelector('.fa-angle-up');
 
-    // Show the list when the destination box is clicked
-    locationDestinationBox.addEventListener('click', () => {
-        activityList.style.display = activityList.style.display === 'none' ? 'block' : 'none';
+    // Set initial state
+    activityList.style.display = 'none';
+    activityDownIcon.style.display = 'inline';
+    activityUpIcon.style.display = 'none';
+
+    const toggleActivityList = () => {
+        const isActivityListVisible = activityList.style.display === 'block';
+        activityList.style.display = isActivityListVisible ? 'none' : 'block';
+        activityDownIcon.style.display = isActivityListVisible ? 'inline' : 'none';
+        activityUpIcon.style.display = isActivityListVisible ? 'none' : 'inline';
+    };
+
+    activityDestinationBox.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleActivityList();
+        locationList.style.display = 'none'; // Hide the location list
+        locationDownIcon.style.display = 'inline'; // Show the down icon for location
+        locationUpIcon.style.display = 'none'; // Hide the up icon for location
     });
 
-    // Get all list items inside the location list
     const activityItems = document.querySelectorAll('.activity-list li');
 
-    // Loop through each list item and add a click event listener
     activityItems.forEach(item => {
-        item.addEventListener('click', () => {
-            // Update the destination span's text content to the clicked item's value
+        item.addEventListener('click', (e) => {
+            e.stopPropagation();
             activitySpan.textContent = item.getAttribute('value');
-            // Hide the location list
             activityList.style.display = 'none';
+            activityDownIcon.style.display = 'inline';
+            activityUpIcon.style.display = 'none';
         });
+    });
+
+    // Add event listener to document to hide both lists when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!locationDestinationBox.contains(e.target) && !locationList.contains(e.target)) {
+            locationList.style.display = 'none';
+            locationDownIcon.style.display = 'inline';
+            locationUpIcon.style.display = 'none';
+        }
+        if (!activityDestinationBox.contains(e.target) && !activityList.contains(e.target)) {
+            activityList.style.display = 'none';
+            activityDownIcon.style.display = 'inline';
+            activityUpIcon.style.display = 'none';
+        }
     });
 });
 
+
+//--------date form-------------------
 
