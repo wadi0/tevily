@@ -4,7 +4,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-
 a {
     text-decoration: none !important;
 }
@@ -459,6 +458,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     width: 205px;
     z-index: 1;
     display: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .animat-background-data .search-form .location-box .location-destination-box {
@@ -466,14 +466,46 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     align-items: center;
     gap: 15px;
     cursor: pointer;
-  /*  height: 70px;*/
-  /*align-content: center;*/
-  /*position: relative;*/
+    /*  height: 70px;*/
+    /*align-content: center;*/
+    /*position: relative;*/
 }
 
 .location-destination-box .box-icon {
     font-size: 30px;
     color: #E8604C;
+    margin-right: 1rem;
+}
+
+.input-group-text {
+    background-color: white !important;
+    border: none !important;
+    padding: 0 !important;
+    height: 65px !important;
+}
+
+.datepicker {
+    width: 220px !important;
+    margin-left: -16px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.datepicker-days {
+    width: 200px !important;
+    margin: 0 auto !important;
+}
+
+.table-condensed {
+    width: 100% !important;
+}
+
+.datepicker-days tr {
+    text-align: center;
+}
+
+.datepicker-days tr .day:hover {
+    background-color: #E8604C !important;
+    color: white !important;
 }
 
 .location-destination-box .location-destination {
@@ -493,6 +525,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     width: 252px;
     display: none;
     z-index: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .location-destination-box .location-destination .location {
@@ -523,6 +556,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .search-form .date-box {
     width: 55%;
+    cursor: default !important;
 }
 
 .search-form .guests-box {
@@ -1509,7 +1543,7 @@ footer {
     font-size: 14px;
     position: absolute;
     z-index: 10;
-    width: 100%;
+    width: -moz-available;
     background-color: white;
     color: #a9a8b6;
     height: 6rem;
@@ -1537,6 +1571,7 @@ footer {
 .up-arrow {
     display: none;
 }
+
 .hidden {
     display: none;
 }
@@ -1881,6 +1916,16 @@ footer {
         height: 17rem;
     }
 
+    .location-activity .location-list {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .animat-background-data .search-form .activity-container .activity-list {
+        width: 100%;
+        margin-left: 0;
+    }
+
 }
 
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
@@ -2199,6 +2244,14 @@ footer {
     .article-card {
         height: 20rem;
     }
+
+    .location-activity .location-list, .animat-background-data .search-form .activity-container .activity-list {
+        margin-left: 0;
+    }
+
+    /*.datepicker {*/
+    /*    margin-left: 0 !important;*/
+    /*}*/
 
 }
 

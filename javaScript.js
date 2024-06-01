@@ -352,3 +352,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //--------date form-------------------
 
+$(document).ready(function() {
+    setDatepicker("datepicker");
+});
+
+function setDatepicker(id) {
+    $("#" + id).datepicker({
+        format: "mm/dd/yyyy",
+        orientation: "bottom auto",
+        autoclose: true
+    }).on('changeDate', function(e) {
+        var selectedDate = e.format(0, "mm/dd/yyyy");
+        $('#selected-date').text(selectedDate);
+    });
+
+    $(".input-group-text").click(function() {
+        $("#" + id).datepicker('show');
+    });
+}
