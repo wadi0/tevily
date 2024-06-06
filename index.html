@@ -174,9 +174,30 @@
                 <ul class="header-menu-right">
                     <li class="search-menu me-3"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li class="circle-user"><a href="#"><i class="fa-regular fa-circle-user"></i></a></li>
-                    <li class="three-line-icon"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="three-line-icon"><a href="#"><i class="fa-solid fa-bars" id="show-icon"></i></a></li>
                 </ul>
             </div>
+        </div>
+        <div class="header-mobile" id="header-mobile">
+            <ul class="header-mobile-ul">
+                <li class="mobile-logo-cancel">
+<!--                    <a href="#">-->
+                        <img src="https://gaviaspreview.com/wp/tevily/wp-content/themes/tevily/assets/images/logo-mobile.png"
+                             alt="tevily-logo"/>
+<!--                    </a>-->
+                    <i class="fa-solid fa-xmark" id="close-icon"></i>
+                </li>
+                <li class="mobile-home">
+                    <a class="mobile-home" href="#">Home</a>
+                    <i class="fa-solid fa-plus"></i>
+                </li>
+                <div class="ps-4 pe-4"><hr class="m-0"></div>
+                <li class="mobile-home">
+                    <a class="mobile-home" href="#">Home</a>
+                    <i class="fa-solid fa-plus"></i>
+                </li>
+                <div class="ps-4 pe-4"><hr class="m-0"></div>
+            </ul>
         </div>
     </header>
     <div>
@@ -242,32 +263,19 @@
                     <div class="date-guest">
                         <div class="location-box date-box">
                             <div class="location-destination-box">
-<!--                                <div class="input-group date">-->
-<!--                                    <span class="input-group-prepend">-->
-<!--                                        <span class="input-group-text">-->
-<!--                                            <i class="fa-regular fa-clock box-icon"></i>-->
-<!--                                            <div class="location-destination">-->
-<!--                                                <span class="location">-->
-<!--                                                    <p class="m-0">Date From</p>-->
-<!--                                                </span>-->
-<!--                                                <span class="destination">Date From</span>-->
-<!--                                            </div>-->
-<!--                                        </span>-->
-<!--                                    </span>-->
-<!--                                </div>-->
                                 <div class="input-group date" id="datepicker">
-    <span class="input-group-prepend">
-        <span class="input-group-text">
-            <i class="fa-regular fa-clock box-icon"></i>
-            <div class="location-destination">
-                <span class="location">
-                    <p class="m-0">Date From</p>
-                </span>
-                <span class="destination" id="selected-date">Date From</span>
-            </div>
-        </span>
-    </span>
-</div>
+                                    <span class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa-regular fa-clock box-icon"></i>
+                                            <div class="location-destination">
+                                                <span class="location">
+                                                    <p class="m-0">Date From</p>
+                                                </span>
+                                                <span class="destination" id="selected-date">Date From</span>
+                                            </div>
+                                        </span>
+                                    </span>
+                                </div>
                             </div>
 
                         </div>

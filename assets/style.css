@@ -1338,11 +1338,6 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
     padding: 0 1rem;
     padding-bottom: 4rem;
     align-content: center;
-    /*padding: 0 20px !important;*/
-    /*margin: 3rem 0;*/
-    /*max-width: 1175px;*/
-    /*padding-bottom: 4rem;*/
-    /*align-content: center;*/
 }
 
 .swiper-wrapper-article {
@@ -1576,15 +1571,79 @@ footer {
     display: none;
 }
 
-/*.date-field {*/
-/*    width: 222px;*/
-/*  margin-left: -16px;*/
-/*  position: absolute;*/
-/*  height: 70px;*/
-/*  top: 0px;*/
-/*  border: none;*/
-/*  opacity: 0;*/
-/*}*/
+header .header-mobile {
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-mobile .header-mobile-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-mobile .header-mobile-ul .mobile-logo-cancel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding-left: 1.5rem;
+    height: 3rem;
+}
+
+.header-mobile .header-mobile-ul .mobile-logo-cancel img {
+    width: 20%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.header-mobile .header-mobile-ul .mobile-logo-cancel i {
+    background-color: coral;
+    height: 100%;
+    align-content: center;
+    padding: 0 1rem;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.header-mobile .header-mobile-ul .mobile-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 4rem;
+}
+
+.header-mobile .header-mobile-ul .mobile-home a {
+    padding: 0;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header-mobile .header-mobile-ul .mobile-home a:hover {
+    color: #E8604C;
+}
+
+.header-mobile .header-mobile-ul .mobile-home i {
+    color: gray;
+    cursor: pointer;
+}
+
+.hidden-sidebar {
+    display: none;
+}
+
+.header-mobile.active-sidebar {
+    display: block;
+}
 
 
 /*-----------------------------------------------------------------*/
@@ -1926,6 +1985,10 @@ footer {
         margin-left: 0;
     }
 
+    /*.header-mobile {*/
+    /*    display: block !important;*/
+    /*}*/
+
 }
 
 @media only screen and (min-width: 576px) and (max-width: 1024px) {
@@ -2249,8 +2312,8 @@ footer {
         margin-left: 0;
     }
 
-    /*.datepicker {*/
-    /*    margin-left: 0 !important;*/
+    /*.header-mobile {*/
+    /*    display: block !important;*/
     /*}*/
 
 }
@@ -2342,4 +2405,8 @@ footer {
         text-align: end;
         padding-right: 2rem;
     }
+
+    /*.header-mobile {*/
+    /*    display: none;*/
+    /*}*/
 }

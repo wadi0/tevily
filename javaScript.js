@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //--------date form-------------------
 
-$(document).ready(function() {
+$(document).ready(function () {
     setDatepicker("datepicker");
 });
 
@@ -361,12 +361,27 @@ function setDatepicker(id) {
         format: "mm/dd/yyyy",
         orientation: "bottom auto",
         autoclose: true
-    }).on('changeDate', function(e) {
+    }).on('changeDate', function (e) {
         var selectedDate = e.format(0, "mm/dd/yyyy");
         $('#selected-date').text(selectedDate);
     });
 
-    $(".input-group-text").click(function() {
+    $(".input-group-text").click(function () {
         $("#" + id).datepicker('show');
     });
 }
+
+//-----------close side menu-----------
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Show the header-mobile div when the three-line icon is clicked
+    document.getElementById('show-icon').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default action of the link
+        document.getElementById('header-mobile').classList.add('active-sidebar');
+    });
+
+    // Hide the header-mobile div when the close icon is clicked
+    document.getElementById('close-icon').addEventListener('click', function () {
+        document.getElementById('header-mobile').classList.remove('active-sidebar');
+    });
+});
