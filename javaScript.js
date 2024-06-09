@@ -373,15 +373,24 @@ function setDatepicker(id) {
 
 //-----------close side menu-----------
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Show the header-mobile div when the three-line icon is clicked
-    document.getElementById('show-icon').addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent the default action of the link
-        document.getElementById('header-mobile').classList.add('active-sidebar');
-    });
+document.addEventListener('DOMContentLoaded', function() {
+            const headerMobile = document.getElementById('header-mobile');
 
-    // Hide the header-mobile div when the close icon is clicked
-    document.getElementById('close-icon').addEventListener('click', function () {
-        document.getElementById('header-mobile').classList.remove('active-sidebar');
-    });
-});
+            // Show the header-mobile div when the three-line icon is clicked
+            document.getElementById('show-icon').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default action of the link
+                headerMobile.classList.add('active-sidebar');
+            });
+
+            // Hide the header-mobile div when the close icon is clicked
+            document.getElementById('close-icon').addEventListener('click', function() {
+                headerMobile.classList.remove('active-sidebar');
+            });
+
+            // Hide the header-mobile div when clicking outside of it
+            document.addEventListener('click', function(event) {
+                if (!headerMobile.contains(event.target) && event.target.id !== 'show-icon') {
+                    headerMobile.classList.remove('active-sidebar');
+                }
+            });
+        });
