@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./assets/favicon.ico">
-    <title>Home 4 – Tevily – Travel & Tour Booking WordPress Theme</title>
+    <title>Tevily – Travel & Tour Booking WordPress Theme</title>
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/21e752383a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -173,10 +173,25 @@
                     </li>
                 </ul>
                 <ul class="header-menu-right">
-                    <li class="search-menu me-3"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="circle-user"><a href="#"><i class="fa-regular fa-circle-user"></i></a></li>
-                    <li class="three-line-icon"><a href="#"><i class="fa-solid fa-bars" id="show-icon"></i></a></li>
+                    <li class="search-menu me-3">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+
+                    <li class="circle-user">
+                        <a href="#" id="userIcon"><i class="fa-regular fa-circle-user"></i></a>
+
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu-user" id="dropdownMenu">
+                            <li><a href="#"><i class="fa-solid fa-right-to-bracket me-2"></i>Login</a></li>
+                            <li><a href="#"><i class="fa-solid fa-user-plus me-2"></i>Register</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="three-line-icon">
+                        <a href="#"><i class="fa-solid fa-bars" id="show-icon"></i></a>
+                    </li>
                 </ul>
+
             </div>
         </div>
         <div class="header-mobile" id="header-mobile">
@@ -239,9 +254,9 @@
                                 <b>Africa</b>
                                 <li id="nigeria" value="Nigeria" class="ps-3 mt-2">Nigeria</li>
                                 <li id="morocco" value="Morocco" class="ps-3 mb-2">Morocco</li>
-                                <b>Asia</b>
-                                <li id="japan" value="Japan" class="ps-3 mt-2">Japan</li>
-                                <li id="singapore" value="Singapore" class="ps-3 mb-2">Singapore</li>
+                                <!--                                <b>Asia</b>-->
+                                <!--                                <li id="japan" value="Japan" class="ps-3 mt-2">Japan</li>-->
+                                <!--                                <li id="singapore" value="Singapore" class="ps-3 mb-2">Singapore</li>-->
                             </ul>
                         </div>
                         <div class="location-box activity-container ">
@@ -268,8 +283,10 @@
                     <div class="date-guest">
                         <div class="location-box date-box">
                             <div class="location-destination-box">
-                                <div class="input-group date" id="datepicker">
-                                        <span class="input-group-prepend">
+                                <div class="input-group date">
+                                    <!--                                     id="datepicker"-->
+
+                                    <span class="input-group-prepend">
                                             <span class="input-group-text">
                                                 <i class="fa-regular fa-clock box-icon"></i>
                                                 <div class="location-destination">
@@ -414,7 +431,7 @@
                     <div class="swiper-slide feature-slider">
                         <div class="feature-card-data">
                             <div class="feature-card">
-                                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=800&h=533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                      alt="feature-card"/>
                             </div>
                             <div class="feature-data">
@@ -441,7 +458,7 @@
                     <div class="swiper-slide feature-slider">
                         <div class="feature-card-data">
                             <div class="feature-card">
-                                <img src="https://images.unsplash.com/photo-1528543606781-2f6e6857f318?q=80&w=800&h=533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                <img src="https://images.unsplash.com/photo-1528543606781-2f6e6857f318?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                      alt="feature-card"/>
                             </div>
                             <div class="feature-data">
@@ -468,7 +485,7 @@
                     <div class="swiper-slide feature-slider">
                         <div class="feature-card-data">
                             <div class="feature-card">
-                                <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=800&h=533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                      alt="feature-card"/>
                             </div>
                             <div class="feature-data">
@@ -495,7 +512,7 @@
                     <div class="swiper-slide feature-slider">
                         <div class="feature-card-data">
                             <div class="feature-card">
-                                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=800&h=533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                      alt="feature-card"/>
                             </div>
                             <div class="feature-data">
@@ -522,7 +539,7 @@
                     <div class="swiper-slide feature-slider">
                         <div class="feature-card-data">
                             <div class="feature-card">
-                                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800&h=533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                      alt="feature-card"/>
                             </div>
                             <div class="feature-data">
@@ -549,7 +566,7 @@
                     <div class="swiper-slide feature-slider">
                         <div class="feature-card-data">
                             <div class="feature-card">
-                                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=800&h=533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=800&h=800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                      alt="feature-card"/>
                             </div>
                             <div class="feature-data">
@@ -575,7 +592,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-pagination"></div>
+                <!--                <div class="swiper-pagination"></div>-->
                 <div class="swiper-button-prev swiper-button-prev-feature ">
                     <i class="fa-solid fa-angle-left custom-icon-prev"></i>
                 </div>
@@ -609,7 +626,8 @@
                              alt="location-name"/>
                     </div>
                     <div class="two-img-column">
-                        <img src="https://plus.unsplash.com/premium_photo-1700483717331-6da3888bc3db?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="location-name"/>
+                        <img src="https://plus.unsplash.com/premium_photo-1700483717331-6da3888bc3db?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                             alt="location-name"/>
                     </div>
                 </div>
             </div>

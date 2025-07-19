@@ -71,11 +71,12 @@ const swiperEvent = new Swiper(".swiper-event", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
+  autoplay: false,
 
-  autoplay: {
-    delay: 5000, // milliseconds
-    disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-  },
+  // autoplay: {
+  //   delay: 5000, // milliseconds
+  //   disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+  // },
 
   slidesPerView: 5,
   spaceBetween: 30,
@@ -446,6 +447,33 @@ function setDatepicker(id) {
     });
   });
 
-  
+
 //   footer full year 
   document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+
+
+const userIcon = document.getElementById('userIcon');
+const dropdownMenu = document.getElementById('dropdownMenu');
+const circleUser = userIcon.closest('.circle-user');
+
+userIcon.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  // Dropdown দেখানো/লুকানো toggle
+  if (dropdownMenu.style.display === 'block') {
+    dropdownMenu.style.display = 'none';
+    circleUser.classList.remove('active');  // orange রঙ সরানো
+  } else {
+    dropdownMenu.style.display = 'block';
+    circleUser.classList.add('active');  // orange রঙ দেওয়া
+  }
+});
+
+// Dropdown এর বাইরে ক্লিক করলে dropdown এবং orange color বন্ধ হবে
+document.addEventListener('click', function(e) {
+  if (!circleUser.contains(e.target)) {
+    dropdownMenu.style.display = 'none';
+    circleUser.classList.remove('active');
+  }
+});
