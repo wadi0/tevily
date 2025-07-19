@@ -858,7 +858,7 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 }
 
 .tevily-event {
-    margin-top: -80px;
+    margin-top: -90px;
     margin-bottom: 30px;
 }
 
@@ -939,14 +939,14 @@ header .header-menu .header-menu-control .header-menu-right .three-line-icon i {
 
 .swiper-event {
     width: 1150px;
-    height: 260px;
-    padding: 0 1rem !important;
-    margin: 0 auto;
+    /*height: 260px;*/
+    padding: 1rem !important;
+    margin: 10px auto;
 }
 
-/*.swiper-wrapper-event {*/
-/*    margin: 0 auto;*/
-/*}*/
+.swiper-wrapper-event {
+    padding: 20px 0;
+}
 
 .swiper-button-prev-event {
     background-color: lightgrey;
