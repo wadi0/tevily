@@ -71,12 +71,12 @@ const swiperEvent = new Swiper(".swiper-event", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-  autoplay: false,
+  // autoplay: false,
 
-  // autoplay: {
-  //   delay: 5000, // milliseconds
-  //   disableOnInteraction: false, // prevent auto-play from stopping on user interaction
-  // },
+  autoplay: {
+    delay: 5000, // milliseconds
+    disableOnInteraction: false, // prevent auto-play from stopping on user interaction
+  },
 
   slidesPerView: 5,
   spaceBetween: 30,
